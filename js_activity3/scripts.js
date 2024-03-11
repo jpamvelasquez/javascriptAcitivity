@@ -1,8 +1,8 @@
 const multiply = document.querySelector(".ops-mul");
 
 multiply.addEventListener("click", function () {
-  let rows = parseInt(document.querySelector(".type-row").value);
-  let cols = parseInt(document.querySelector(".type-col").value);
+  let rows = Number(document.querySelector(".type-row").value);
+  let cols = Number(document.querySelector(".type-col").value);
 
   let spacing = "";
 
