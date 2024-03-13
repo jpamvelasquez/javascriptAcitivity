@@ -1,0 +1,23 @@
+p {
+  font-weight: 600;
+}
+/* 
+.container {
+  height: 2rem;
+  background-color: aqua;
+} */
+
+.table-container {
+  height: 300px;
+  overflow-y: auto;
+  max-width: 100%;
+}
+
+.table {
+  background-color: transparent !important;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: #fff;
+}
