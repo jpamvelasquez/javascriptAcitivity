@@ -21,3 +21,9 @@ p {
   background-color: #343a40;
   color: #fff;
 }
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
