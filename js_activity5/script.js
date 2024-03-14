@@ -18,19 +18,14 @@ logHours.addEventListener("click", function () {
     info[updateIndex] = [originalEmployeeId, employeeName, employeeHours];
 
     updateIndex = -1;
-
-    document.getElementById("e.id").value = "";
-    document.getElementById("e.name").value = "";
-    document.getElementById("e.hours").value = "";
+    clearForm();
   } else {
     if (idExist(employeeId)) {
       alert("Employee ID already exists");
       return;
     }
     info.push([employeeId, employeeName, employeeHours]);
-    document.getElementById("e.id").value = "";
-    document.getElementById("e.name").value = "";
-    document.getElementById("e.hours").value = "";
+    clearForm();
   }
   console.log(info);
   displayInfo();
@@ -72,5 +67,16 @@ function update(index) {
 }
 
 function idExist(id) {
-  return info.some((empId) => empId[0] === id);
+  for (let i = 0; i < info.length; i++) {
+    if (info[i][0] === id) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function clearForm() {
+  document.getElementById("e.id").value = "";
+  document.getElementById("e.name").value = "";
+  document.getElementById("e.hours").value = "";
 }
