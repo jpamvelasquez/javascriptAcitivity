@@ -54,6 +54,8 @@ function displayInfo() {
 function remove(index) {
   info.splice(index, 1);
   displayInfo();
+  clearForm();
+  document.querySelector(".updating").innerText = "Log Hours";
 }
 
 function update(index) {
