@@ -29,6 +29,7 @@ logHours.addEventListener("click", function () {
   }
   console.log(info);
   displayInfo();
+  document.getElementById("e.id").disabled = false;
 });
 
 function displayInfo() {
