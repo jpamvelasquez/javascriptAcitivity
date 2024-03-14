@@ -63,8 +63,8 @@ function remove(index) {
 
 function update(index) {
   updateIndex = index;
-  let originalId = (document.getElementById("e.id").value = info[index][0]);
-  document.getElementById("e.id").value = info[index[0]];
+  // let originalId = (document.getElementById("e.id").value = info[index][0]);
+  document.getElementById("e.id").value = info[index][0];
   document.getElementById("e.name").value = info[index][1];
   document.getElementById("e.hours").value = info[index][2];
 
