@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+}
+
+.card {
+  height: 33rem;
+  background-color: aqua;
+  width: 21rem;
+}
+.img-resize {
+  height: 20rem;
+  width: 21rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.img-resize img {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.cart-button {
+  justify-content: space-evenly;
+}
+.cart-button .btn {
+  width: 6rem;
+}
+
+.item-container {
+  overflow-y: auto;
+  max-width: 100%;
+  height: 43rem;
+}
+
+.photo-circle {
+  height: 7rem;
+  background-color: blueviolet;
+  width: 7rem;
+}
+.photo-circle img {
+  height: 100%;
+  border-radius: 50%;
+  width: 100%;
+}
