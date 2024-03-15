@@ -186,6 +186,7 @@ function clearForm() {
 
 //adding to cart
 function cartF(i) {
+  let indexTrack = -1;
   let list = "";
 
   for (let x = 0; x < items.length; x++) {
@@ -273,3 +274,17 @@ function modifyF(index) {
 //   }
 //   document.querySelector(".tr-row").innerHTML = list;
 // }
+
+function plusF(index) {
+  items[index].itemsQuantity++;
+  cartF();
+}
+
+function minusF(index) {
+  items[index].itemsQuantity--;
+  if (items[index].itemsQuantity <= 0) {
+    items.splice(index, 1);
+  }
+  cartF();
+  displayItems();
+}
