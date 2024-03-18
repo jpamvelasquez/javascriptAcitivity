@@ -47,17 +47,18 @@ remove.addEventListener("click", function () {
 
   grades = document.querySelectorAll(".display-grade");
 
-  if (grades.length === 0) {
-    document.querySelector("span").innerText = "00.00";
-    return;
-  }
-
   let total = 0;
   let gradeCount = 0;
+
   grades.forEach(function (el) {
     total += Number(el.value);
     gradeCount++;
   });
+
+  if (grades.length === 0) {
+    document.querySelector("span").innerText = "0.00";
+    return;
+  }
 
   let averageGrade = total / gradeCount;
   document.querySelector("span").innerText = averageGrade.toFixed(2);
