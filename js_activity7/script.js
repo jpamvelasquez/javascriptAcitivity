@@ -51,11 +51,13 @@ remove.addEventListener("click", function () {
   let gradeCount = 0;
 
   grades.forEach(function (el) {
-    total += Number(el.value);
-    gradeCount++;
+    if (el.value.trim() !== "") {
+      total += Number(el.value);
+      gradeCount++;
+    }
   });
 
-  if (grades.length === 0) {
+  if (gradeCount === 0) {
     document.querySelector("span").innerText = "0.00";
     return;
   }
