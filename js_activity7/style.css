@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+.grading-container {
+  background-color: rgb(164, 184, 215);
+  width: 30rem;
+  /* text-align: center; */
+  padding: 2rem;
+}
+.col {
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.commands {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.li-parent {
+  list-style: none;
+  /* text-align: center;
+  padding: 2rem; */
+}
